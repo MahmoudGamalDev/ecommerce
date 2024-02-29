@@ -3,7 +3,6 @@ import Navbar from "./../Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import { userContext } from "./../../context/TokenContext";
 import { Offline } from "react-detect-offline";
-import Footer from "../Footer/Footer";
 
 export default function Layout() {
   let { setToken } = useContext(userContext);
@@ -24,7 +23,6 @@ export default function Layout() {
       <div className="container">
         <Outlet />
       </div>
-      <Footer />
     </div>
   );
 }
